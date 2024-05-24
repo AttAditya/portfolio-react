@@ -1,0 +1,14 @@
+.about {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+.about h1 {
+    color: #333;
+    font-size: 4rem;
+    
+    margin: 0;
+}
+
