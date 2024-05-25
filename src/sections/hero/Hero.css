@@ -1,4 +1,4 @@
-.Hero {
+.hero {
     background-image: linear-gradient(to bottom right, #00ff99, #00bbff);
     color: white;
 
@@ -7,6 +7,9 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    padding-top: 6rem;
+    padding-bottom: 10rem;
 }
 
 .hero-image {

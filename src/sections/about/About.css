@@ -12,3 +12,46 @@
     margin: 0;
 }
 
+.about p {
+    color: #333;
+    font-size: 1.5rem;
+    
+    margin: 0;
+}
+
+.section-content {
+    height: 100%;
+
+    margin: 0;
+    padding: 2rem;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.section:nth-child(2n) .section-content {
+    grid-template-areas: "main filler";
+}
+
+.section:nth-child(2n+1) .section-content {
+    grid-template-areas: "filler main";
+}
+
+.filler-content {
+    grid-area: filler;
+}
+
+.main-content {
+    margin: 0;
+    padding: 2rem;
+
+    grid-area: main;
+}
+
+.main-content p {
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 2.5rem;
+}
+

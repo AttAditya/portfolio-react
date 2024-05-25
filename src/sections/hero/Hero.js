@@ -4,7 +4,7 @@ import Loki from '../../components/texts/Loki';
 
 function Hero() {
     return (
-        <section className="Hero">
+        <section className="hero">
             <div className="hero-image">
                 <img src="/Pixel Aditya 512.png" alt="profile" />
             </div>

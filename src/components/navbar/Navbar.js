@@ -5,8 +5,8 @@ function Navbar({ nav_sections }) {
         <nav className="navbar">
             <ul>
                 {
-                    nav_sections.map((section) => (
-                        <li>
+                    nav_sections.map((section, index) => (
+                        <li key={index} >
                             <a href={`#${section.toLowerCase()}`}>{section}</a>
                         </li>
                     ))
