@@ -1,25 +1,104 @@
+nav, nav * {
+    transition: all 0.5s;
+}
+
 nav {
     position: fixed;
 
     bottom: 5vh;
-    left: 0;
+    left: 50%;
 
-    width: 100%;
+    transform: translateX(-50%);
+
+    width: 0%;
     height: 5vh;
 
-    background-color: #333;
+    background-color: transparent;
 
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
     align-items: center;
 
-    padding: 0 20px;
+    gap: 0;
+
+    margin: 0;
+    padding: 0;
+
+    border-radius: 2.5vh;
 
     z-index: 1000;
+
+    cursor: default;
+    user-select: none;
+}
+
+nav.active {
+    background-color: #000000;
+    gap: 2.5vh;
+    width: 90%;
+}
+
+nav button {
+    height: calc(100% + 2.5vh);
+    width: calc(5vh + 2.5vh);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border: 0.5rem solid #000000;
+    border-radius: 50%;
+
+    outline: none;
+
+    aspect-ratio: 1;
+
+    background-color: #ffffff;
+
+    opacity: 0.2;
+
+    cursor: pointer;
+}
+
+nav button:hover, nav.active button, nav.active button:hover {
+    opacity: 1;
+}
+
+nav button img {
+    height: 100%;
+    width: 100%;
+
+    aspect-ratio: 1;
+    
+    object-fit: contain;
+}
+
+nav .gradient-text {
+    font-size: 2.5vh;
+    text-wrap: nowrap;
+    letter-spacing: 0.5vh;
+
+    font-weight: bold;
+
+    width: 0%;
+    height: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    overflow: hidden;
+}
+
+nav.active .gradient-text {
+    width: 10%;
+
+    max-width: 100%;
+    min-width: fit-content;
 }
 
 nav ul {
-    width: 100%;
+    width: 0%;
     height: 100%;
 
     display: flex;
@@ -27,7 +106,18 @@ nav ul {
     justify-content: center;
     align-items: center;
     
-    gap: 1rem;
+    gap: 2rem;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+nav.active ul.navbar-links {
+    width: 100%;
 }
 
 nav ul li {
@@ -35,7 +125,21 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #ffffff;
     text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 0.5vh;
+    background: linear-gradient(to bottom right, #00ff99, #00bbff);
+    transition: width 0.5s;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
 }
 
