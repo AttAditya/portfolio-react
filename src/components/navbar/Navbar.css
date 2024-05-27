@@ -1,4 +1,5 @@
-nav, nav * {
+nav,
+nav * {
     transition: all 0.5s ease;
 }
 
@@ -8,7 +9,7 @@ nav {
     bottom: 5vh;
     left: 50%;
 
-    transform: translateX(-50%);
+    transform: translateX(0%);
 
     width: 0%;
     height: 5vh;
@@ -16,13 +17,13 @@ nav {
     background-color: transparent;
 
     display: flex;
-    justify-content: start;
     align-items: center;
 
     gap: 0;
 
     margin: 0;
     padding: 0;
+    padding-right: 2.5vh;
 
     border-radius: 2.5vh;
 
@@ -33,9 +34,32 @@ nav {
 }
 
 nav.active {
+    transform: translateX(-50%);
     background-color: #000000;
     gap: 2.5vh;
     width: 90%;
+}
+
+.nav-container {
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 0;
+
+    margin: 0;
+    padding: 0;
+
+    overflow: hidden;
+}
+
+nav.active .nav-container {
+    gap: 2.5vh;
+    width: 100%;
+    background-color: #000000;
 }
 
 nav button {
@@ -66,7 +90,9 @@ nav button {
     transform: translateX(-50%);
 }
 
-nav button:hover, nav.active button, nav.active button:hover {
+nav button:hover,
+nav.active button,
+nav.active button:hover {
     opacity: 1;
 }
 
@@ -75,13 +101,19 @@ nav button img {
     width: 100%;
 
     aspect-ratio: 1;
-    
+
     object-fit: contain;
+}
+
+.navbar-left {
+    display: flex;
+
+    justify-content: start;
+    align-items: center;
 }
 
 nav a:has(.gradient-text) {
     text-decoration: none;
-    width: 0%;
 }
 
 nav a .gradient-text {
@@ -91,43 +123,28 @@ nav a .gradient-text {
 
     font-weight: bold;
 
+    width: 15vh;
     height: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
-
-    overflow: hidden;
-}
-
-nav.active a:has(.gradient-text) {
-    width: 10%;
-
-    max-width: 100%;
-    min-width: fit-content;
 }
 
 nav ul {
-    width: 0%;
     height: 100%;
 
     display: flex;
 
     justify-content: center;
     align-items: center;
-    
+
     gap: 2rem;
 
     margin: 0;
-    padding: 0;
+    padding: 1rem;
 
     box-sizing: border-box;
-
-    overflow: hidden;
-}
-
-nav.active ul.navbar-links {
-    width: 100%;
 }
 
 nav ul li {
@@ -140,7 +157,7 @@ nav ul li a {
     font-weight: bold;
 }
 
-nav ul li a::after {
+nav ul li a:not(:has(svg))::after {
     content: '';
     display: block;
     width: 0;
@@ -149,7 +166,7 @@ nav ul li a::after {
     transition: width 0.5s;
 }
 
-nav ul li a:hover::after {
+nav ul li a:not(:has(i)):hover::after {
     width: 100%;
 }
 

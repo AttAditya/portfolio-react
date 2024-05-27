@@ -14,10 +14,6 @@ import Projects from './sections/Projects';
 import Skills from './sections/Skills';
 
 function App() {
-  useEffect(() => {
-    document.title = "AttAditya";
-  }, []);
-
   return (
     <div className="App">
       <Navbar nav_sections={[
