@@ -2,8 +2,10 @@ import { useRef } from 'react';
 
 import pixelAditya from '../../assets/images/PixelAditya.png';
 import './Navbar.css';
+
 import Loki from '../texts/Loki';
 import Gradient from '../texts/Gradient';
+import ScrollNav from '../texts/ScrollNav';
 
 function Navbar({ nav_sections }) {
     let navbarRef = useRef();
@@ -18,15 +20,17 @@ function Navbar({ nav_sections }) {
                 <img src={pixelAditya} alt="Pixel Aditya" />
             </button>
 
-            <Gradient text={
-                (<Loki text="ADITYA" />)
+            <ScrollNav id="hero" text={
+                <Gradient text={
+                    (<Loki text="ADITYA" />)
+                } />
             } />
 
             <ul className="navbar-links">
                 {
                     nav_sections.map((section, index) => (
                         <li key={index} >
-                            <a href={`#${section.toLowerCase()}`}>{section}</a>
+                            <ScrollNav id={section.toLowerCase()} text={section} />
                         </li>
                     ))
                 }
