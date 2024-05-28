@@ -1,5 +1,3 @@
-import { useEffect } from 'react';
-
 import './App.css';
 import './sections/section.css';
 
@@ -28,6 +26,7 @@ function App() {
       <Hero />
       <About />
       <Projects />
+      {/* <CP /> */}
       <Skills />
       <Experience />
       <Education />

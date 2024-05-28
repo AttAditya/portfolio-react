@@ -1,7 +1,4 @@
 .about {
-    margin: 0;
-    padding: 0;
-
     box-sizing: border-box;
 }
 
@@ -20,8 +17,6 @@
 }
 
 .section-content {
-    height: 100%;
-
     margin: 0;
     padding: 2rem;
 
@@ -38,10 +33,6 @@
     grid-template-areas: "filler main";
 }
 
-.filler-content {
-    grid-area: filler;
-}
-
 .main-content {
     margin: 0;
     padding: 2rem;
@@ -55,3 +46,22 @@
     line-height: 2.5rem;
 }
 
+.filler-content {
+    grid-area: filler;
+
+    margin: 0;
+    padding: 0 2rem;
+
+    display: flex;
+
+    justify-content: center;
+}
+
+.filler-content .json-box {
+    width: 100%;
+}
+
+.filler-content .json-box pre {
+    font-size: 1.25rem;
+    font-family: 'JetBrains Mono', monospace;
+}

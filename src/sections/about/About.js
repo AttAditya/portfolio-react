@@ -1,10 +1,60 @@
 import "./About.css";
 
 import Gradient from "../../components/texts/Gradient";
+import JSONBox from "../../components/jsonbox/JSONBox";
 
 function About() {
     let birthDate = new Date("2005-07-24");
+    let today = new Date();
     let age = Math.round((new Date() - birthDate) / 100 / 60 / 60 / 24 / 365.25) / 10;
+
+    let aboutJSON = {
+        basic_info: {
+            name: "Aditya",
+            alias: [
+                "AttAditya",
+                "Attachment Aditya",
+                "Aditya Prasad Dash"
+            ],
+            gender: "Male",
+            pronouns: "He/Him",
+            age: {
+                years: Math.floor(age),
+                months: Math.round((age - Math.floor(age)) * 12)
+            }
+        },
+        interests: [
+            "Programming",
+            "Robotics",
+            "Maths",
+            "Aviation",
+            "Music"
+        ]
+    };
+
+    let today_date = `${[
+        "Sunday",
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday",
+        "Saturday"
+    ][today.getDay()]} ${today.getDate()} ${
+        [
+            "January",
+            "February",
+            "March",
+            "April",
+            "May",
+            "June",
+            "July",
+            "August",
+            "September",
+            "October",
+            "November",
+            "December"
+    ][today.getMonth()]}, ${today.getFullYear()}`;
 
     return (
         <section className="section about" id="about">
@@ -14,15 +64,24 @@ function About() {
 
             <div className="section-content">
                 <div className="filler-content">
-                    {/* This is filler content. I will add more content here later. */}
+                    <JSONBox content={aboutJSON} />
                 </div>
 
                 <div className="main-content">
                     <p>
-                        I'm Attachment Aditya, and I'm {age} years old.
-                        I like coding and I also own a YouTube channel known as "Attachment Studios". I've made many projects and videos.
-                        Other than that, I personally like Cubing. Although no world records but I have solved many cubes. I have a decent collection of cube, decent because I have a few types of cubes, no repeats but many types of cubes. Another thing I've also been into many other activites. These include robotics, writing, mathematics, arts, music, animations and much more.
-                        You know, I'm pretty talented if you ask me... I mean... Yeah, if we ignore some laziness...
+                        Hi! I'm <Gradient text="Aditya" />.
+
+                        <br /><br />
+
+                        For those who don't understand the content in the box, it is a <Gradient text="JSON object" /> that tells you a bit about me.
+                        Don't fret if you don't understand it, I'll explain it to you.
+
+                        <br /><br />
+
+                        You might know me as <Gradient text="AttAditya" />, <Gradient text="Attachment Aditya" /> or <Gradient text="Aditya Prasad Dash" />.
+                        As of now({today_date}), I'm {Math.round(age)}({age}) years old.
+                        As of creating this website, I'm a college student studying Computer Science.
+                        My interests lie in <Gradient text="programming" />, <Gradient text="robotics" />, <Gradient text="maths" />, <Gradient text="aviation" />, and <Gradient text="music" />.
                     </p>
                 </div>
             </div>
