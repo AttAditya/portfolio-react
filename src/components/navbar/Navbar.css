@@ -139,7 +139,7 @@ nav ul {
     justify-content: center;
     align-items: center;
 
-    gap: 2rem;
+    gap: 1rem;
 
     margin: 0;
     padding: 1rem;
@@ -168,6 +168,19 @@ nav ul li a:not(:has(svg))::after {
 
 nav ul li a:not(:has(i)):hover::after {
     width: 100%;
+}
+
+nav ul li:has(a svg) {
+    padding: 0.5rem;
+    transition: 0.1s;
+    box-sizing: border-box;
+    border-radius: 0.5rem;
+    transition: all 0.1s;
+}
+
+nav ul li:has(a:hover svg) {
+    transition: all 0.1s;
+    background: linear-gradient(to bottom right, #00ff99, #00bbff);
 }
 
 .nav-notif {
@@ -201,6 +214,8 @@ nav ul li a:not(:has(i)):hover::after {
     transition: all 0.5s;
 
     animation: none;
+
+    cursor: pointer;
 }
 
 .nav-notif .gradient-text {
@@ -210,12 +225,13 @@ nav ul li a:not(:has(i)):hover::after {
 
     font-weight: bold;
 
-    width: 15vh;
     height: 100%;
 
     display: flex;
     justify-content: center;
     align-items: center;
+
+    margin-left: 1rem;
 }
 
 .nav-notif.active {

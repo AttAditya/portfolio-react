@@ -2,7 +2,8 @@ import pixelAditya from '../../assets/images/PixelAditya.png';
 
 import './Hero.css';
 
-import Loki from '../../components/texts/Loki';
+import Loki from '../../components/texts/loki/Loki';
+import TypeText from '../../components/texts/typetext/TypeText';
 
 function Hero() {
     return (
@@ -15,7 +16,15 @@ function Hero() {
                 <h1>
                     <Loki text="ADITYA" />
                 </h1>
-                <p>A Developer and a Student</p>
+                
+                <p>
+                    I'm a <TypeText texts={[
+                        "Student",
+                        "Software Developer",
+                        "Web Developer",
+                        "Game Developer"
+                    ]} />
+                </p>
             </div>
         </section>
     );

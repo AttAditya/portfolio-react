@@ -8,9 +8,9 @@ import { SiLeetcode } from 'react-icons/si';
 import pixelAditya from '../../assets/images/PixelAditya.png';
 import './Navbar.css';
 
-import Loki from '../texts/Loki';
-import Gradient from '../texts/Gradient';
-import ScrollNav from '../texts/ScrollNav';
+import Loki from '../texts/loki/Loki';
+import Gradient from '../texts/gradient/Gradient';
+import ScrollNav from '../texts/scrollnav/ScrollNav';
 
 function Navbar({ nav_sections }) {
     let navbarRef = useRef();
@@ -93,9 +93,9 @@ function Navbar({ nav_sections }) {
 
             <div className={
                 `nav-notif ${navNotif ? "active" : ""}`
-            }>
+            } onClick={toggleNavbar}>
                 <FontAwesomeIcon icon={faAngleLeft} size='lg' />
-                <Gradient text="Click Me!" />
+                <Gradient text="Click Here!" />
             </div>
         </nav>
     );

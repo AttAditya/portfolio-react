@@ -65,3 +65,33 @@
     font-size: 1.25rem;
     font-family: 'JetBrains Mono', monospace;
 }
+
+.user-actions {
+    margin: 0;
+    padding: 2rem;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.user-actions button {
+    margin: 0;
+    padding: 1rem 2rem;
+
+    font-size: 1.5rem;
+    font-weight: bold;
+
+    text-transform: capitalize;
+
+    background-color: #000000;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+}
+

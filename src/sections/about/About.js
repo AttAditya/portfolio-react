@@ -1,7 +1,8 @@
 import "./About.css";
 
-import Gradient from "../../components/texts/Gradient";
+import Gradient from "../../components/texts/gradient/Gradient";
 import JSONBox from "../../components/jsonbox/JSONBox";
+import ScrollNav from "../../components/texts/scrollnav/ScrollNav";
 
 function About() {
     let birthDate = new Date("2005-07-24");
@@ -83,6 +84,14 @@ function About() {
                         As of creating this website, I'm a college student studying Computer Science.
                         My interests lie in <Gradient text="programming" />, <Gradient text="robotics" />, <Gradient text="maths" />, <Gradient text="aviation" />, and <Gradient text="music" />.
                     </p>
+
+                    <div className="user-actions">
+                        <button className="contact-button">
+                            <ScrollNav id="contact" text={
+                                <Gradient text="Contact me" />
+                            } />
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
