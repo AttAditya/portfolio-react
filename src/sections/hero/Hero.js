@@ -21,8 +21,7 @@ function Hero() {
                     I'm a <TypeText texts={[
                         "Student",
                         "Software Developer",
-                        "Web Developer",
-                        "Game Developer"
+                        "Web Developer"
                     ]} />
                 </p>
             </div>
