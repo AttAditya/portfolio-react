@@ -139,7 +139,7 @@ nav ul {
     justify-content: center;
     align-items: center;
 
-    gap: 1rem;
+    gap: 2rem;
 
     margin: 0;
     padding: 1rem;
@@ -155,32 +155,38 @@ nav ul li a {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+    background-color: transparent;
+    position: relative;
 }
 
-nav ul li a:not(:has(svg))::after {
+nav ul li a::after {
     content: '';
+    
     display: block;
+    
     width: 0;
     height: 0.5vh;
+    
     background: linear-gradient(to bottom right, #00ff99, #00bbff);
+    
     transition: width 0.5s;
+    
+    position: absolute;
+    
+    top: 100%;
+    left: 0%;
 }
 
-nav ul li a:not(:has(i)):hover::after {
+nav ul li a:hover::after {
     width: 100%;
 }
 
-nav ul li:has(a svg) {
-    padding: 0.5rem;
-    transition: 0.1s;
-    box-sizing: border-box;
-    border-radius: 0.5rem;
-    transition: all 0.1s;
+nav ul li a:has(svg, i)::after {
+    display: none;
 }
 
-nav ul li:has(a:hover svg) {
-    transition: all 0.1s;
-    background: linear-gradient(to bottom right, #00ff99, #00bbff);
+nav ul li a:hover svg {
+    scale: 1.2;
 }
 
 .nav-notif {
