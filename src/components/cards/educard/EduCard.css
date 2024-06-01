@@ -1,0 +1,108 @@
+.edu-card {
+    width: 100%;
+    height: 30vh;
+
+    display: flex;
+
+    flex-direction: row;
+    justify-content: start;
+
+    margin: 0;
+    padding: 1rem;
+
+    background-color: #ffffff;
+
+    border-radius: 2rem;
+
+    gap: 2rem;
+}
+
+.edu-card .edu-card-image {
+    height: 100%;
+    aspect-ratio: 16/9;
+    
+    background-color: transparent;
+
+    border: 0.25rem solid black;
+    border-radius: 1rem;
+
+    overflow: hidden;
+}
+
+.edu-card .edu-card-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+}
+
+.edu-card-text {
+    text-align: left;
+    padding: 1rem;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: start;
+
+    gap: 1rem;
+}
+
+.edu-card-header h2 {
+    margin: 0;
+    padding: 0;
+
+    font-size: 3rem;
+}
+
+.edu-card-header h3 {
+    margin: 0;
+    padding: 0;
+
+    font-size: 2rem;
+
+    color: #666666;
+}
+
+.edu-card-datetime {
+    list-style: none;
+}
+
+.edu-card:has(.edu-end:empty) .edu-card-header::after {
+    content: "Ongoing";
+
+    background: linear-gradient(to bottom right, #00ff99, #00bbff);
+    color: #ffffff;
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    padding: 0.25rem 0.5rem;
+
+    border-radius: 0.5rem;
+}
+
+.edu-card-ctx button {
+    margin: 0;
+    padding: 0.5rem 1rem;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    text-transform: capitalize;
+
+    background-color: #000000;
+
+    border: none;
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.edu-card-ctx button:hover {
+    scale: 1.1;
+}
+

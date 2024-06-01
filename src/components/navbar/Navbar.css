@@ -64,7 +64,6 @@ nav.active .nav-container {
 
 nav button {
     height: calc(100% + 2.5vh);
-    width: calc(5vh + 2.5vh);
 
     margin: 0;
     padding: 0;

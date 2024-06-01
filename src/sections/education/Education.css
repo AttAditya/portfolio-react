@@ -1,0 +1,20 @@
+#education {
+    box-sizing: border-box;
+}
+
+#education .section-content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#education .main-content {
+    margin: 0;
+    padding: 4rem;
+
+    width: 100%;
+}
+
+#education .edu-list {
+    list-style: none;
+}
+

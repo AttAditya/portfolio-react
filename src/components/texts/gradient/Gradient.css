@@ -4,3 +4,8 @@
     -webkit-text-fill-color: transparent;
 }
 
+.gradient-text::selection {
+    color: black;
+    -webkit-text-fill-color: black;
+}
+

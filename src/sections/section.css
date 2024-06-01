@@ -13,3 +13,35 @@ section:nth-child(2n) {
     background-color: #f0f0f0;
 }
 
+section > h1 {
+    color: #000000;
+    font-size: 4rem;
+    
+    margin: 0;
+}
+
+.section:nth-child(2n):has(.filler-content):has(.main-content) .section-content {
+    grid-template-areas: "main filler";
+}
+
+.section:nth-child(2n+1):has(.filler-content):has(.main-content) .section-content {
+    grid-template-areas: "filler main";
+}
+
+.section:has(.filler-content):has(.main-content) .section-content {
+    margin: 0;
+    padding: 2rem;
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+}
+
+.section:has(.filler-content):has(.main-content) .main-content {
+    grid-area: main;
+}
+
+.section:has(.filler-content):has(.main-content) .filler-content {
+    grid-area: filler;
+}
+
