@@ -1,7 +1,7 @@
 import "./Education.css"
 
 import Gradient from "../../components/texts/gradient/Gradient";
-import EduCard from "../../components/cards/educard/EduCard";
+import { EduCard } from "../../components";
 
 function Education() {
     return (
