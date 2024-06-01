@@ -1,5 +1,7 @@
-export { default as Gridlines } from "./gridlines";
-export { default as JSONBox } from "./jsonbox";
-export { default as Progress } from "./progress";
-export { default as ScrollProgress } from "./scrollprogress"
-export { default as Navbar } from "./navbar";
+export { Gridlines } from "./gridlines";
+export { JSONBox } from "./jsonbox";
+export { Progress } from "./progress";
+export { ScrollProgress } from "./scrollprogress";
+export { Navbar } from "./navbar";
+export { Gradient, Loki, LokiChar, TypeText, ScrollNav } from "./texts";
+export { EduCard } from "./cards";

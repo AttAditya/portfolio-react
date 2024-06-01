@@ -1,1 +1,1 @@
-export { default } from "./JSONBox";
+export { default as JSONBox } from "./JSONBox";

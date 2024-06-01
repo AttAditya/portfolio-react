@@ -1,1 +1,1 @@
-export { default } from './educard';
+export { EduCard } from './educard';

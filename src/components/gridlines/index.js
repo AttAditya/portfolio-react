@@ -1,1 +1,1 @@
-export { default } from "./Gridlines";
+export { default as Gridlines } from "./Gridlines";
