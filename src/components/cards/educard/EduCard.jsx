@@ -18,8 +18,8 @@ function EduCard({ image, school, degree, start, end=null, location, grade=null,
                         <li className="edu-location">{location}</li>
 
                         <li className="edu-dates">
-                            <span className="edu-start">{start}</span>
-                            <span className="edu-end">{end ? end : ""}</span>
+                            <span className="edu-start">{end ? "" : "Joined "} {start}</span>
+                            <span className="edu-end">{end ? ` - ${end}` : ""}</span>
                         </li>
                     </ul>
 
