@@ -24,7 +24,7 @@ function ScrollProgress() {
 
     return (
         <div className="scroll-progress">
-            <Progress value={progressValue} />
+            <Progress value={progressValue} fillColor="linear-gradient(to right, var(--color3), var(--color4))" />
         </div>
     );
 }

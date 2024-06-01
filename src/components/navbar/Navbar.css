@@ -25,19 +25,25 @@ nav {
     padding: 0;
     padding-right: 2.5vh;
 
+    border: none;
     border-radius: 2.5vh;
-
+    
     z-index: 1000;
-
+    
     cursor: default;
     user-select: none;
 }
 
 nav.active {
-    transform: translateX(-50%);
-    background-color: #000000;
-    gap: 2.5vh;
     width: 90%;
+
+    transform: translateX(-50%);
+    
+    background-color: var(--color1);
+    
+    gap: 2.5vh;
+
+    border: 0.25rem solid var(--color2);
 }
 
 .nav-container {
@@ -59,14 +65,14 @@ nav.active {
 nav.active .nav-container {
     gap: 2.5vh;
     width: 100%;
-    background-color: #000000;
+    background-color: var(--color1);
 }
 
 nav button {
     height: calc(100% + 2.5vh);
 
     margin: 0;
-    padding: 0;
+    padding: 0.5rem;
 
     margin-right: -5vh;
 
@@ -74,14 +80,14 @@ nav button {
     justify-content: center;
     align-items: center;
 
-    border: 0.5rem solid #000000;
+    border: 0.25rem solid var(--color2);
     border-radius: 50%;
 
     outline: none;
 
     aspect-ratio: 1;
 
-    background-color: #ffffff;
+    background-color: var(--color1);
 
     opacity: 0.2;
     cursor: pointer;
@@ -93,6 +99,10 @@ nav button:hover,
 nav.active button,
 nav.active button:hover {
     opacity: 1;
+}
+
+nav button:hover {
+    scale: 1.1;
 }
 
 nav button img {
@@ -151,7 +161,7 @@ nav ul li {
 }
 
 nav ul li a {
-    color: #ffffff;
+    color: var(--color2);
     text-decoration: none;
     font-weight: bold;
     background-color: transparent;
@@ -166,7 +176,7 @@ nav ul li a::after {
     width: 0;
     height: 0.5vh;
     
-    background: linear-gradient(to bottom right, #00ff99, #00bbff);
+    background: linear-gradient(to bottom right, var(--color3), var(--color4));
     
     transition: width 0.5s;
     
@@ -201,14 +211,15 @@ nav ul li a:hover svg {
     justify-content: center;
     align-items: center;
 
-    background: #000000;
-    color: #ffffff;
+    background: var(--color1);
+    color: var(--color2);
 
-    padding: 1rem;
+    padding: 0.5rem 1rem;
     margin: 0;
 
     box-sizing: border-box;
 
+    border: 0.25rem solid var(--color2);
     border-radius: 1rem;
     overflow: visible;
 

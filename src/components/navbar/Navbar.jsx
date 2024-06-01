@@ -91,12 +91,14 @@ function Navbar({ nav_sections }) {
             </div>
 
 
-            <div className={
-                `nav-notif ${navNotif ? "active" : ""}`
-            } onClick={toggleNavbar}>
-                <FontAwesomeIcon icon={faAngleLeft} size='lg' />
-                <Gradient text="Click Here!" />
-            </div>
+            {
+                navNotif ? (
+                    <div className={`nav-notif ${navNotif ? "active" : ""}`} onClick={toggleNavbar}>
+                        <FontAwesomeIcon icon={faAngleLeft} size='lg' />
+                        <Gradient text="Click Here!" />
+                    </div>
+                ) : ""
+            }
         </nav>
     );
 }
