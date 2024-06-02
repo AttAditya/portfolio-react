@@ -18,6 +18,21 @@ function Projects() {
             name: "Attachment Studios(GitHub)"
         },
         {
+            url: "https://github.com/SyntLang",
+            icon: faGithub,
+            name: "SyntLang"
+        },
+        {
+            url: "https://github.com/Tullax",
+            icon: faGithub,
+            name: "Tullax NFTs"
+        },
+        {
+            url: "https://github.com/Berry-Foundations",
+            icon: faGithub,
+            name: "Berry Foundations"
+        },
+        {
             url: "https://attachment-studios.itch.io/",
             icon: faItchIo,
             name: "Attachment Studios(itch.io)"
