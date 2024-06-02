@@ -1,6 +1,5 @@
 .edu-card {
     width: 100%;
-    height: 30vh;
 
     display: flex;
 
@@ -18,7 +17,7 @@
 }
 
 .edu-card .edu-card-image {
-    height: 100%;
+    width: 30%;
     aspect-ratio: 16/9;
     
     background: linear-gradient(to bottom right, var(--color3), var(--color4));
@@ -44,6 +43,8 @@
 }
 
 .edu-card-text {
+    width: calc(100% - (30vh * 16 / 9));
+
     text-align: left;
     padding: 1rem;
 
