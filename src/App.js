@@ -1,6 +1,7 @@
 import "./variables.css";
 import "./App.css";
-import { HomePage } from './pages';
+
+import { HomePage } from "./pages";
 
 function App() {
     return (

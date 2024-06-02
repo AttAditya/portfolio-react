@@ -1,15 +1,16 @@
 import '../../sections/section.css';
 
-import About from '../../sections/about/About';
-import Contact from '../../sections/Contact';
-import Education from '../../sections/education/Education';
-import CompetitiveProgramming from '../../sections/cp/CompetitiveProgramming';
-import Experience from '../../sections/Experience';
-import Hero from '../../sections/hero/Hero';
-import Projects from '../../sections/Projects';
-import Skills from '../../sections/Skills';
-
 import { Navbar, ScrollProgress } from '../../components';
+import {
+    AboutSection,
+    CPSection,
+    ExperienceSection,
+    HeroSection,
+    ProjectsSection,
+    SkillsSection,
+    EducationSection,
+    ContactSection
+} from '../../sections';
 
 function HomePage() {
     return (
@@ -23,14 +24,14 @@ function HomePage() {
                 "Contact"
             ]} />
 
-            <Hero />
-            <About />
-            <Projects />
-            <Skills />
-            <Experience />
-            <CompetitiveProgramming />
-            <Education />
-            <Contact />
+            <HeroSection />
+            <AboutSection />
+            <ProjectsSection />
+            <SkillsSection />
+            <ExperienceSection />
+            <CPSection />
+            <EducationSection />
+            <ContactSection />
 
             <ScrollProgress />
         </div>
