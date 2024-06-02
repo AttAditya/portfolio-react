@@ -103,6 +103,31 @@
     scale: 1.1;
 }
 
+.projects {
+    width: 100%;
+
+    margin: 0;
+    padding: 2rem;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 2rem;
+}
+
+.projects-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    color: var(--color2);
+}
+
 #projects .projects-list {
     width: 100%;
 

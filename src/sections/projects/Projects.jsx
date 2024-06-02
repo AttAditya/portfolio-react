@@ -4,38 +4,44 @@ import { Gradient, ProjectCard } from "../../components";
 import projectsData from "./ProjectsData";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub, faItchIo } from "@fortawesome/free-brands-svg-icons";
+import { SiScratch } from "react-icons/si";
 
 function Projects() {
     let accountsData = [
         {
             url: "https://github.com/AttAditya",
-            icon: faGithub,
+            icon: (<FontAwesomeIcon icon={faGithub} className="account-icon" />),
             name: "AttAditya"
         },
         {
             url: "https://github.com/Attachment-Studios",
-            icon: faGithub,
+            icon: (<FontAwesomeIcon icon={faGithub} className="account-icon" />),
             name: "Attachment Studios(GitHub)"
         },
         {
             url: "https://github.com/SyntLang",
-            icon: faGithub,
+            icon: (<FontAwesomeIcon icon={faGithub} className="account-icon" />),
             name: "SyntLang"
         },
         {
             url: "https://github.com/Tullax",
-            icon: faGithub,
+            icon: (<FontAwesomeIcon icon={faGithub} className="account-icon" />),
             name: "Tullax NFTs"
         },
         {
             url: "https://github.com/Berry-Foundations",
-            icon: faGithub,
+            icon: (<FontAwesomeIcon icon={faGithub} className="account-icon" />),
             name: "Berry Foundations"
         },
         {
             url: "https://attachment-studios.itch.io/",
-            icon: faItchIo,
+            icon: (<FontAwesomeIcon icon={faItchIo} className="account-icon" />),
             name: "Attachment Studios(itch.io)"
+        },
+        {
+            url: "https://scratch.mit.edu/users/Attachment/",
+            icon: (<SiScratch />),
+            name: "Attachment Studios(Scratch)"
         }
     ];
 
@@ -58,7 +64,7 @@ function Projects() {
                                     <li key={index} className="account">
                                         <a href={account.url} target="_blank" rel="noopener noreferrer" className="account-link">
                                             <button className="account-button">
-                                                <FontAwesomeIcon icon={account.icon} className="account-icon" />
+                                                {account.icon}
                                                 <span className="account-name">
                                                     <Gradient text={account.name} />
                                                 </span>
@@ -70,15 +76,21 @@ function Projects() {
                         </ul>
                     </div>
 
-                    <ul className="projects-list">
-                        {
-                            projectsData.map((project, index) => (
-                                <li key={index}>
-                                    <ProjectCard project={project} />
-                                </li>
-                            ))
-                        }
-                    </ul>
+                    <div className="projects">
+                        <h2 className="projects-title">
+                            All Projects (GitHub)
+                        </h2>
+
+                        <ul className="projects-list">
+                            {
+                                projectsData.map((project, index) => (
+                                    <li key={index}>
+                                        <ProjectCard project={project} />
+                                    </li>
+                                ))
+                            }
+                        </ul>
+                    </div>
                 </div>
             </div>
         </section>
