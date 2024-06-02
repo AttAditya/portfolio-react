@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faInstagram, faLinkedinIn, faYoutube, faGithub } from '@fortawesome/free-brands-svg-icons';
+import { faInstagram, faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 import { faAngleLeft } from '@fortawesome/free-solid-svg-icons';
 import { SiLeetcode } from 'react-icons/si';
 
@@ -67,12 +67,6 @@ function Navbar({ nav_sections }) {
                     <li>
                         <a href="https://linkedin.com/in/attachment-aditya" target="_blank" rel="noreferrer">
                             <FontAwesomeIcon icon={faLinkedinIn} size='xl' />
-                        </a>
-                    </li>
-
-                    <li>
-                        <a href="https://www.youtube.com/AttachmentStudios" target="_blank" rel="noreferrer">
-                            <FontAwesomeIcon icon={faYoutube} size='xl' />
                         </a>
                     </li>
 
