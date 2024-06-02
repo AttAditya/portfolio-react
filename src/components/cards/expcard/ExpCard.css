@@ -1,0 +1,117 @@
+.edu-card {
+    width: 100%;
+
+    display: flex;
+
+    flex-direction: row;
+    justify-content: start;
+
+    margin: 0;
+    padding: 1rem;
+
+    background-color: var(--color1);
+
+    border-radius: 3rem;
+
+    gap: 2rem;
+}
+
+.edu-card .edu-card-image {
+    width: 30%;
+    aspect-ratio: 16/9;
+    
+    background: linear-gradient(to bottom right, var(--color3), var(--color4));
+
+    border: none;
+    border-radius: 2rem;
+
+    margin: 0;
+    padding: 0.5rem;
+
+    overflow: hidden;
+}
+
+.edu-card .edu-card-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: contain;
+    
+    border-radius: 1.5rem;
+
+    background-color: var(--color2);
+}
+
+.edu-card-text {
+    width: calc(100% - (30vh * 16 / 9));
+
+    text-align: left;
+    padding: 1rem;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: start;
+
+    gap: 1rem;
+}
+
+.edu-card-header h2 {
+    margin: 0;
+    padding: 0;
+
+    font-size: 3rem;
+}
+
+.edu-card-header h3 {
+    margin: 0 0 1rem 0;
+    padding: 0;
+
+    font-size: 2rem;
+
+    color: var(--color6);
+}
+
+.edu-card-datetime {
+    list-style: none;
+}
+
+.edu-card:has(.edu-end:empty) .edu-card-header::after {
+    content: "Working";
+
+    background: linear-gradient(to bottom right, var(--color3), var(--color4));
+    color: var(--color1);
+
+    font-weight: bold;
+
+    text-transform: uppercase;
+
+    margin: 0;
+    padding: 0.25rem 0.5rem;
+
+    border-radius: 0.5rem;
+}
+
+.edu-card-ctx button {
+    margin: 0;
+    padding: 0.5rem 1rem;
+
+    font-size: 1rem;
+    font-weight: bold;
+
+    text-transform: capitalize;
+
+    background-color: var(--color7);
+
+    border: none;
+    border-radius: 0.5rem;
+
+    cursor: pointer;
+
+    transition: all 0.2s ease-in-out;
+}
+
+.edu-card-ctx button:hover {
+    scale: 1.1;
+}
+
