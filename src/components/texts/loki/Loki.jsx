@@ -2,13 +2,13 @@ import LokiChar from "./LokiChar";
 
 function Loki({ text }) {
     let element = (
-        <div className="Loki">
+        <span className="Loki">
             {
                 text.split("").map((char, index) => (
                     <LokiChar char={char} key={index} />
                 ))
             }
-        </div>
+        </span>
     );
 
     return element

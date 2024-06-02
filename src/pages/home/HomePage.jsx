@@ -1,6 +1,6 @@
 import '../../sections/section.css';
 
-import { Navbar, ScrollProgress } from '../../components';
+import { Footer, Navbar, ScrollProgress } from '../../components';
 import {
     AboutSection,
     CPSection,
@@ -35,6 +35,8 @@ function HomePage() {
             <ContactSection />
 
             <ScrollProgress />
+
+            <Footer />
         </div>
     );
 }
