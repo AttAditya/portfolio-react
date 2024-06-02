@@ -1,4 +1,5 @@
 .scroll-nav {
     text-decoration: none;
     cursor: pointer;
+    text-wrap: nowrap;
 }

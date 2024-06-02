@@ -4,6 +4,8 @@
     box-sizing: border-box;
 
     color: var(--color2);
+
+    transition: all 0.3s ease-in-out;
 }
 
 .App {

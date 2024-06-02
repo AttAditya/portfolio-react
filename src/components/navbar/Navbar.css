@@ -12,7 +12,7 @@ nav {
     transform: translateX(0%);
 
     width: 0%;
-    height: 5vh;
+    height: 6vh;
 
     background-color: transparent;
 
@@ -26,7 +26,7 @@ nav {
     padding-right: 2.5vh;
 
     border: none;
-    border-radius: 2.5vh;
+    border-radius: 3.5vh;
     
     z-index: 1000;
     
@@ -43,7 +43,7 @@ nav.active {
     
     gap: 2.5vh;
 
-    border: 0.25rem solid var(--color2);
+    border: 0.5vh solid var(--color2);
 }
 
 .nav-container {
@@ -196,6 +196,10 @@ nav ul li a:has(svg, i)::after {
 
 nav ul li a:hover svg {
     scale: 1.2;
+}
+
+nav .scroll-nav {
+    font-size: 2vh;
 }
 
 .nav-notif {

@@ -15,6 +15,91 @@
     width: 100%;
 }
 
+.accounts {
+    width: 100%;
+
+    margin: 0;
+    margin-bottom: 2rem;
+    padding: 2rem;
+
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.accounts-title {
+    margin: 0;
+    padding: 0;
+
+    font-size: 2rem;
+    font-weight: bold;
+
+    color: var(--color2);
+}
+
+.accounts-list {
+    width: 100%;
+
+    list-style: none;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.account-link {
+    text-decoration: none;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.account-button {
+    margin: 0;
+    padding: 1rem;
+
+    background-color: var(--color1);
+    border-radius: 0.5rem;
+
+    border: none;
+    outline: none;
+
+    cursor: pointer;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+
+    font-size: 1.5rem;
+}
+
+.account-name {
+    margin: 0;
+    padding: 0;
+
+    font-weight: bold;
+
+    color: var(--color2);
+}
+
+.account-button:hover {
+    scale: 1.1;
+}
+
 #projects .projects-list {
     width: 100%;
 
