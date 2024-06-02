@@ -16,7 +16,7 @@ function Experience() {
         },
         {
             company: "Zolo Stays",
-            position: "Intern",
+            position: "Intern (Scaler Innovation Labs)",
             location: "Remote (Bengaluru, India)",
             image: "https://logowik.com/content/uploads/images/zolo-stays3393.jpg",
             start: "March 2024",
