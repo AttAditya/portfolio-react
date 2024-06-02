@@ -1,0 +1,30 @@
+#projects {
+    box-sizing: border-box;
+    min-height: auto;
+}
+
+#projects .section-content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#projects .main-content {
+    margin: 0;
+    padding: 4rem;
+
+    width: 100%;
+}
+
+#projects .projects-list {
+    width: 100%;
+
+    list-style: none;
+
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 2rem;
+}

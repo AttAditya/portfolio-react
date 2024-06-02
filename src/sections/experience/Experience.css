@@ -14,7 +14,7 @@
     width: 100%;
 }
 
-#experience .edu-list {
+#experience .exp-list {
     width: 100%;
 
     list-style: none;
@@ -28,11 +28,11 @@
     gap: 2rem;
 }
 
-#experience .edu-list li {
+#experience .exp-list li {
     width: 100%;
 }
 
-.edu-card {
+.exp-card {
     width: 100%;
     box-sizing: border-box;
 

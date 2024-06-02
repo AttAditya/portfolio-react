@@ -1,0 +1,23 @@
+.project-card {
+    margin: 0;
+    padding: 1rem;
+
+    background-color: var(--color1);
+    border-radius: 0.5rem;
+}
+
+.project-card:hover {
+    scale: 1.1;
+}
+
+.project-link {
+    text-decoration: none;
+
+    display: flex;
+
+    justify-content: space-between;
+    align-items: center;
+
+    gap: 1rem;
+}
+

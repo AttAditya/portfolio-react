@@ -48,7 +48,7 @@ function Experience() {
 
             <div className="section-content">
                 <div className="main-content">
-                    <ul className="edu-list">
+                    <ul className="exp-list">
                         {
                             experienceData.map((exp, index) => {
                                 return (

@@ -4,4 +4,4 @@ export { Progress } from "./progress";
 export { ScrollProgress } from "./scrollprogress";
 export { Navbar } from "./navbar";
 export { Gradient, Loki, LokiChar, TypeText, ScrollNav } from "./texts";
-export { EduCard, ExpCard } from "./cards";
+export { EduCard, ExpCard, ProjectCard } from "./cards";
