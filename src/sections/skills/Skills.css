@@ -1,0 +1,28 @@
+#skills {
+    box-sizing: border-box;
+    min-height: auto;
+}
+
+#skills .section-content {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#skills .main-content {
+    margin: 0;
+    padding: 4rem;
+
+    width: 100%;
+}
+
+.skill-list {
+    padding: 4rem;
+
+    display: flex;
+
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}

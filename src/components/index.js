@@ -5,5 +5,5 @@ export { ScrollProgress } from "./scrollprogress";
 export { Navbar } from "./navbar";
 export { Footer } from "./footer";
 export { Gradient, Loki, LokiChar, TypeText, ScrollNav } from "./texts";
-export { EduCard, ExpCard, ProjectCard } from "./cards";
+export { EduCard, ExpCard, ProjectCard, SkillCard } from "./cards";
 export { LeetCodeCard } from "./special";

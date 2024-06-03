@@ -1,0 +1,39 @@
+.skill-card {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--color5);
+
+    margin: 1rem;
+    padding: 2rem;
+
+    border-radius: 1rem;
+
+    gap: 1rem;
+}
+
+.skill-card-icon {
+    font-size: 4rem;
+}
+
+.skill-card-body {
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 1rem;
+}
+
+.skill-card-name {
+    font-size: 2rem;
+}
+
+.skill-card-rating {
+    font-size: 2rem;
+}
+
