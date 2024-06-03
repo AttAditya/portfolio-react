@@ -20,7 +20,7 @@ function HomePage() {
                 "Projects",
                 "Skills",
                 "Experience",
-                "Competitive Programming",
+                "CP",
                 "Education",
                 "Contact"
             ]} />
