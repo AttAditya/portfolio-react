@@ -4,7 +4,9 @@ import { Gradient, SkillCard } from "../../components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCss3, faHtml5, faJs, faNodeJs, faPython, faReact, faJava, faGit } from "@fortawesome/free-brands-svg-icons";
 import { SiFlask, SiFastapi, SiSpringboot, SiMysql, SiArduino, SiRaspberrypi } from "react-icons/si";
-import { faDatabase } from "@fortawesome/free-solid-svg-icons";
+import { faCode, faDatabase, faGlobe, faPalette } from "@fortawesome/free-solid-svg-icons";
+import { TbApi } from "react-icons/tb";
+import { PiGraph } from "react-icons/pi";
 
 function Skills() {
     let skills = [
@@ -82,6 +84,31 @@ function Skills() {
             name: "Git",
             icon: <FontAwesomeIcon icon={faGit} />,
             rating: 3
+        },
+        {
+            name: "REST API",
+            icon: <TbApi />,
+            rating: 4
+        },
+        {
+            name: "Web Dev",
+            icon: <FontAwesomeIcon icon={faGlobe} />,
+            rating: 4
+        },
+        {
+            name: "Designing",
+            icon: <FontAwesomeIcon icon={faPalette} />,
+            rating: 3.5
+        },
+        {
+            name: "DSA",
+            icon: <PiGraph />,
+            rating: 4.5
+        },
+        {
+            name: "OOP",
+            icon: <FontAwesomeIcon icon={faCode} />,
+            rating: 4
         }
     ];
 
