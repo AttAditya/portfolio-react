@@ -4,6 +4,17 @@ import { Gradient, ExpCard } from "../../components";
 function Experience() {
     let experienceData = [
         {
+            company: "Scaler School of Technology",
+            position: "Teaching Assistant",
+            location: "Bangalore, India",
+            image: "https://scaler-blog-prod-wp-content.s3.ap-south-1.amazonaws.com/wp-content/uploads/2022/10/22114541/Scaler_Logo_WhiteBG.jpg",
+            start: "April 2024",
+            ctx: {
+                link: "https://scaler.com/school-of-technology",
+                text: "Company Website"
+            }
+        },
+        {
             company: "The World Times",
             position: "Software Developer",
             location: "Remote (Bengaluru, India)",
